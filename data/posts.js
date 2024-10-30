@@ -13,8 +13,10 @@ function createPosts(){
     posts.push(post)
   }
 
-  return posts
-
+  return {
+    posts,
+    length : posts.length
+  }
 }
 
 
