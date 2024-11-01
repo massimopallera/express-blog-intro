@@ -1,7 +1,7 @@
 const posts = require('../data/posts.js')
 
-function index(rq,res){
-  res.json(posts.createPosts())
+function index(req,res){
+  res.json(posts)
 }
 
 module.exports = {index}
