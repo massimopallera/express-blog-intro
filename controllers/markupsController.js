@@ -1,7 +1,7 @@
 // const posts = require('../data/posts.js')
 
+const posts = require('../data/posts.js') 
 function createMarkupPosts(req, res){
-  const posts = require('../data/posts.js')
   let markup = ''
 
   posts.forEach(element => {
@@ -11,7 +11,7 @@ function createMarkupPosts(req, res){
     <li>
       <h3>${title}</h3>
       <p>${content}</p>
-      <img src="${img}" alt="">
+      <img src="public/img${img}" alt="">
     </li>
     
     `
